@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RestoreTalkBrowse"/>
+        <activity android:name=".RestoreTalkUser"/>
+        <activity android:name=".RestoreTalkRoom"/>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class RestoreTalkStart extends AppCompatActivity {
 
@@ -18,7 +19,8 @@ public class RestoreTalkStart extends AppCompatActivity {
         Button browseBtn = (Button)findViewById(R.id.browse);
         browseBtn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Toast.makeText(getApplicationContext(), "목록 가져오기 버튼", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), RestoreTalkBrowse.class);
+                startActivity(intent);
             }
         });
     }
