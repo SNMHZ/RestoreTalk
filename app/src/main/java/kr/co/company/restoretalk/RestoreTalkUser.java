@@ -20,6 +20,10 @@ public class RestoreTalkUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.restoretalkuser);
 
+        Intent intent = getIntent();
+        String intentitem = intent.getStringExtra("filename");
+        Toast.makeText(getApplicationContext(), intentitem, Toast.LENGTH_LONG).show();
+
         Button browseBtn = (Button)findViewById(R.id.room);
         browseBtn.setOnClickListener(new OnClickListener(){
             public void onClick(View v){
