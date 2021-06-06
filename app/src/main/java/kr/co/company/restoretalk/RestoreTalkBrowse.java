@@ -32,6 +32,7 @@ public class RestoreTalkBrowse extends AppCompatActivity {
         Field[] fields = R.raw.class.getFields();
 
         Items = new ArrayList<String>();
+        System.out.println();
         for(int i = 0; i<fields.length; i++){
             Items.add(fields[i].getName());
         }
@@ -70,5 +71,7 @@ public class RestoreTalkBrowse extends AppCompatActivity {
                 }
             }
         });
+
+
     }
 }

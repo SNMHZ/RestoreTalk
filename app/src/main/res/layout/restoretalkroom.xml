@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="@color/bgyellow"
-            android:text="←"
+            android:text="처음으로"
             android:textColor="@color/black" />
 
         <TextView
