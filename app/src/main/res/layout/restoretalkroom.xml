@@ -9,7 +9,7 @@
     android:background="@color/bgyellow"
     tools:context=".RestoreTalkUser">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/black"
@@ -17,30 +17,44 @@
 
         <Button
             android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/bgyellow"
-            android:text="처음으로"
+            android:text="←"
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/talkname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="       톡 방 이름"
+            android:layout_centerInParent="true"
+            android:text="톡 방 이름"
             android:textColor="@color/white"
             android:textSize="12pt">
 
         </TextView>
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/im1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
     </LinearLayout>
 
 

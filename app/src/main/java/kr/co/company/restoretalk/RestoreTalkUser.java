@@ -36,7 +36,7 @@ public class RestoreTalkUser extends AppCompatActivity {
 
         Intent intent = getIntent();
         String filename = intent.getStringExtra("filename");
-        Toast.makeText(getApplicationContext(), filename, Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), filename, Toast.LENGTH_LONG).show();
 
         //테스트용 raw 파일 열기
         String rawFileData = readTxt( getRawResIdByName(filename) );
